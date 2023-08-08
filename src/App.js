@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import './App.css';
-import User from "./components/User";
+// import User from "./components/User";
+
+// import boostrap
+import 'bootstrap/dist/css/bootstrap.css';
 
  class App extends Component {
   render() {
     const test = 34;
     const isAuth = true;
     return (
-      <div className='App'>
+      <div className='container'>
         {/* <h1>Merhaba React</h1>
         <h4> { 1+ 1 } </h4> 
         <h4> { "test".toLocaleUpperCase() } </h4>
@@ -15,10 +18,13 @@ import User from "./components/User";
         <h4> {isAuth ? <p >Musbet </p> : null} </h4> */}
       
 
-        <h4> App Component</h4>
+        {/* <h4> App Component</h4>
         <User/>
         <User/>
-        <User/>
+        <User/> */}
+
+      <h1 style={{color:"red", fontSize:"40px"}}>Merhaba React</h1>      
+      <h2 className='header'>Hello</h2>
       </div>
     )
   }
