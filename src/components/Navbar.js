@@ -9,12 +9,12 @@ import React from 'react'
 // }
 // export default Navbar;
 
-// functinal components with arrow function
+// functional components with arrow function
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
       <div>
-          <h1>Navbar</h1>
+          <h1>{props.title}</h1>
       </div>
     )
   }

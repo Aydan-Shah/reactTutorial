@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-// import User from "./components/User";
+import User from "./components/User";
 
 // import boostrap
 import 'bootstrap/dist/css/bootstrap.css';
@@ -30,7 +30,14 @@ import Navbar from "./components/Navbar";
       {/* <h1 style={{color:"red", fontSize:"40px"}}>Merhaba React</h1>      
       <h2 className='header'>Hello</h2> */}
 
-       <Navbar />
+       <Navbar title = "User App 2"/>
+       <hr />
+       <User
+       name = "Aydan"
+       salary = "5000"
+       departmen = "Bilisim"
+       />
+       
       </div>
     )
   }
