@@ -35,9 +35,13 @@ import Navbar from "./components/Navbar";
        <User
        name = "Aydan"
        salary = "5000"
-      //  departmen = "Bilisim"
+       departmen = "Bilisim"
        />
-       
+         <User
+       name = "Gozel"
+       salary = "6000"
+       departmen = "Bilisim"
+       />
       </div>
     )
   }
