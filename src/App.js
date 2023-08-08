@@ -5,6 +5,10 @@ import './App.css';
 // import boostrap
 import 'bootstrap/dist/css/bootstrap.css';
 
+// import functional Component
+import Navbar from "./components/Navbar";
+
+
  class App extends Component {
   render() {
     const test = 34;
@@ -23,8 +27,10 @@ import 'bootstrap/dist/css/bootstrap.css';
         <User/>
         <User/> */}
 
-      <h1 style={{color:"red", fontSize:"40px"}}>Merhaba React</h1>      
-      <h2 className='header'>Hello</h2>
+      {/* <h1 style={{color:"red", fontSize:"40px"}}>Merhaba React</h1>      
+      <h2 className='header'>Hello</h2> */}
+
+       <Navbar />
       </div>
     )
   }
