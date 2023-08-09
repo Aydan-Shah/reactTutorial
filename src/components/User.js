@@ -4,17 +4,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 class User extends Component {
+  state = {
+    isVisible : false
+  }
     static defaultProps = {
         name: "Bilgi yok",
         salary: "Bilgi yok",
         departmen: "Bilgi yok"
     }
-    constructor(props) {
-      super(props);
-      this.state = {
-        isVisible : false
-      }
-    }
+    // constructor(props) {
+    //   super(props);
+    //   this.state = {
+    //     isVisible : false
+    //   }
+    // }
   render() {
     // Destructing
     const {name,salary, departmen} = this.props;
@@ -38,13 +41,13 @@ class User extends Component {
                 <h4 className='d-inline'>{name}</h4>
                 <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '24px', color: 'red', cursor:"pointer" }} />
               </div>
-              {
+              {/* {
                 isVisible ?  <div className='card-body'>
                 <p className='card-text'> Maas: {salary}</p>
                 <p className='card-text'> Departmen: {departmen}</p>
               
           </div> : null
-              }
+              } */}
              
             </div>
         </div>
