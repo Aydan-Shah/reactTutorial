@@ -18,6 +18,28 @@ class User extends Component {
     //     isVisible : false
     //   }
     // }
+
+   //  React event
+
+  //  bind inside constructor
+
+  //  constructor(props) {
+  //   super(props)
+  //   this.onClickEvent = this.onClickEvent.bind(this)
+  //  }
+
+  // bind with arrow function
+  onClickEvent = (number, e) => {
+    // console.log(e.target);
+    // console.log('test');
+    // console.log(this)
+    console.log(number)
+  }
+  // onClickEvent(e) {
+  //   // console.log(e.target);
+  //   // console.log('test');
+  //   console.log(this)
+  // }
   render() {
     // Destructing
     const {name,salary, departmen} = this.props;
@@ -38,16 +60,18 @@ class User extends Component {
         <div className='col-md-8 mb-4'>
             <div className="card">
               <div className="card-header d-flex justify-content-between">
-                <h4 className='d-inline'>{name}</h4>
+                {/* <h4 className='d-inline' onClick={this.onClickEvent.bind(this)}>{name}</h4> */}
+                {/* <h4 className='d-inline' onClick={this.onClickEvent}>{name}</h4> */}
+                <h4 className='d-inline' onClick={this.onClickEvent.bind(this, 34)}>{name}</h4>
                 <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '24px', color: 'red', cursor:"pointer" }} />
               </div>
-              {/* {
+              {
                 isVisible ?  <div className='card-body'>
                 <p className='card-text'> Maas: {salary}</p>
                 <p className='card-text'> Departmen: {departmen}</p>
               
           </div> : null
-              } */}
+              }
              
             </div>
         </div>
