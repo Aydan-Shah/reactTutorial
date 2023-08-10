@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-// import User from "./components/User";
+import User from "./components/User";
 import Users from "./components/Users";
 // import boostrap
 import 'bootstrap/dist/css/bootstrap.css';
