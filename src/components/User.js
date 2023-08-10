@@ -29,11 +29,18 @@ class User extends Component {
   //  }
 
   // bind with arrow function
-  onClickEvent = (number, e) => {
+  onClickEvent = (e) => {
     // console.log(e.target);
     // console.log('test');
     // console.log(this)
-    console.log(number)
+    // console.log(number)
+    // this.state = {
+    //   isVisible: true // warning react/no-direct-mutation-state
+    // }
+    this.setState({
+      isVisible : !this.state.isVisible
+    }) 
+
   }
   // onClickEvent(e) {
   //   // console.log(e.target);
@@ -61,8 +68,8 @@ class User extends Component {
             <div className="card">
               <div className="card-header d-flex justify-content-between">
                 {/* <h4 className='d-inline' onClick={this.onClickEvent.bind(this)}>{name}</h4> */}
-                {/* <h4 className='d-inline' onClick={this.onClickEvent}>{name}</h4> */}
-                <h4 className='d-inline' onClick={this.onClickEvent.bind(this, 34)}>{name}</h4>
+                <h4 className='d-inline' onClick={this.onClickEvent}>{name}</h4>
+                {/* <h4 className='d-inline' onClick={this.onClickEvent.bind(this)}>{name}</h4> */}
                 <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '24px', color: 'red', cursor:"pointer" }} />
               </div>
               {
