@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-import User from "./components/User";
+// import User from "./components/User";
 import Users from "./components/Users";
 // import boostrap
 import 'bootstrap/dist/css/bootstrap.css';
@@ -10,28 +10,7 @@ import Navbar from "./components/Navbar";
 
 
  class App extends Component {
-  state = {
-    users: [
-       {
-        id: 1,
-        name: "Aydan",
-        salary: "5000",
-        departmen: "Bilisim"
-       },
-       {
-        id: 2,
-        name: "Gozel",
-        salary: "3000",
-        departmen: "Pazarlik"
-       },
-       {
-        id: 3,
-        name: "Kimse",
-        salary: "6000",
-        departmen: "Uretim"
-       },
-    ]
-  }
+ 
   render() {
     // const test = 34;
     // const isAuth = true;
@@ -54,7 +33,7 @@ import Navbar from "./components/Navbar";
 
        <Navbar title = "User App 2"/>
        <hr />
-      < Users users = {this.state.users} />
+      < Users/>
       </div>
     )
   }
